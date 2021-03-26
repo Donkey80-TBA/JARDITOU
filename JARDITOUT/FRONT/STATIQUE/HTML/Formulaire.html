@@ -1,198 +1,88 @@
 <!DOCTYPE html>
 
 <html Lang= "fr">
-
-        <head>
-
+    <head>
             <meta charset=utf-8>
+            <link rel="stylesheet" href="style.css"/>
+            <title>Formulaire</title>
+    </head>
+    <body>
+        <header>
+            <div id="titre1">
+                <img  id="Logo" src="../IMAGES/jarditou_logo.jpg" alt="Logo" title="Logo Jarditou">
+            </div>
+            <div id="titre2">        
+                <p>la qualité depuis 70 ans </p>
+            </div>
+                <!-- MENU DU SITE-->
+        <nav>
+                <ul>
+                    <li><a href="INDEX.HTML">accueil</a>
+                    <li><a href="tableau.html">tableau</a>
+                    <li><a href="conctact.html">contact</a>
+                </ul>
+        </nav>
+            <img id="promotion" src="../IMAGES/promotion.jpg" alt="promotion" title="promotion-Jarditout"> 
+        </header>   
 
-        </head>
-
-    
-        
-
-            
-                <!--LOGO-->
-
-            <img src="../IMAGES/jarditou_logo.jpg"> 
-
-            <p>la qualité depuis 70 ans </p>
-    </ul>
-
-    
-            <!-- MENU DU SITE-->
-
-            <body>
-
-    <nav>
-
-        <ul>
-            <li><a href="INDEX.HTML">accueil</a>
-            <li><a href="tableau.html">tableau</a>
-            <li><a href="conctact.html">contact</a>
-            </ul>
-
-    </nav>
-
-
-
-            <!--IMAGE-->
-
-            <img src="../IMAGES/promotion.jpg">    
-
-
-
-           
-
-
-    
-    
-            <!--Contenue principal-->
-
-                <h1>Contact</h1>
-                <form  method="post" action="Formulaire.html"></form>
-
+                <!--Contenue principal-->
+                <h1 id="titre">Contact</h1>
                 <hr>
-
-                <table>
-
-                    
-
-                    <tr>
-
+                <form  method="post" action="Formulaire.html"></form>
+                
+        <table>
+            <tr>
                 <p> * Ces zones sont obligatoires <p>
                     
+                    <!--Formulaire -->
+                    <!--on utilise fieldset pour les différentes zones de formulaire -->
+        <fieldset>
 
+            <legend>Vos coordonnées</legend>
+                <p>Votre nom*: <input type="text" name="nom" size="25"></p>
+                <p>Votre prénom*: <input type="text" name="prenom" size="25"></p>
+                <p>Sexe*: <input type="radio" name="sexe"> Féminin
 
-                        <!--Formulaire -->
+            <input type="radio" name="sexe" > Masculin <p>
 
-                        <!--on utilise fieldset pour les différentes zones de formulaire -->
+                <p>Date de naissance* : <input type="date"  size="25" ></p>
+                <p>Code postal*: <input type="text"></p>
+                <p>Adresse: <input type="text"></p>
+                <p>Ville:<input type="text"></p></p>
+                <p>Email:<input type="text"></p></p>
 
-
-
-                        <fieldset>
-
-
-
-                <legend>Vos coordonnées</legend> 
-
-
-                    <p>Votre nom*: <input type="text" name="nom" size="25"></p>
-                
-             
-                    <p>Votre prénom*: <input type="text" name="prenom" size="25"></p>
-
-                    <p>Sexe*: <input type="radio" name="sexe"> Féminin
-
-                     <input type="radio" name="sexe" > Masculin <p>
-
-                    <p>Date de naissance* : <input type="date"  size="25" ></p>
-
-                 <p>Code postal*: <input type="text"></p>
-
-                    <p>Adresse: <input type="text"></p>
-
-                    <p>Ville:<input type="text"></p></p>
-
-                    <p>Email:<input type="text"></p></p>
-
-                </fieldset>
-
-                </tr>
-
-                </table>
-
+        </fieldset>
+            </tr>
+        </table>
                     <!--Demande d information -->
+        <fieldset>
+            <legend>Votre demande</legend>
 
-                    <fieldset>
-
-                <legend>Votre demande</legend>
-
-                          
-                             <!--&&&&& Exemple de liste déroulante-->
-
+                    <!--Exemple de liste déroulante-->
                 <p>
-                    <label for="orientation">Sujet*:  </label>
-                    
-    
-
+                <label for="orientation">Sujet*:  </label>
                 <p>Votre question*: <textarea type="text" rows="4 cols=60"></textarea><p>
 
-                </fieldset>
-
-                 <div>
-
-                    <input class="form-check-input" type="checkbox" id="jatif" required>
-
-                    <label class="form-check-label" for="jatif">* J'accepte le traitement informatique de ce formulaire</label>  
-            
-                </div> 
-                
+        </fieldset>
+            <div>
+                <input class="form-check-input" type="checkbox" id="jatif" required>
+                <label class="form-check-label" for="jatif">* J'accepte le traitement informatique de ce formulaire</label>  
+            </div> 
                 <p>
-                    <input type="submit" value="Envoyer" />
-                    <input type="reset" value="Annuler" />
-                    </p>
-
-                    <hr>    
-                    
-                    
-                    <footer>
-
-
-                  
-         
-                        <ul>
-                            <li><a href="Mention légales.html">Mention légales</a>
-                            <li><a href="Horaires.html">horaires</a>
-                            <li><a href="Plan du site.html">Plan du site</a>
-                            </ul>
+                <input type="submit" value="Envoyer" />
+                <input type="reset" value="Annuler" />
+                </p>
+                 <hr>    
+        <footer>
+                <ul>
+                    <li><a href="Mention légales.html">Mention légales</a></li>
+                    <li><a href="Horaires.html">horaires</a></li>
+                    <li><a href="Plan du site.html">Plan du site</a></li>
+                </ul>
     
-                           
-                
-                    
-                    
-    
-    
-                    
-                    
-    
-    
-    
-    
-    
-                    </tr>        
-    
-    
-                   
-                
-                
-
-
-
-
-
-
-
-                </form> 
-       
-
-
-       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-   </form>         
-
-    </body>
-
-
-  </html>
+            </tr>        
+        </form> 
+        </div>
+    </form>         
+</body>
+</html>
